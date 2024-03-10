@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eef519840c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="creative-minimalistic-sun-logo-isolated-generative-ai__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #details{
+            margin: 0;
+        }
+        #imagewithtwopeople{
+            background-color: #333;
+            width: 100%;
+        }
+        #imagewithtwopeople .innerimagewithtwopeople{
+            width: 90%;
+            margin: 0 auto;
+            padding: 3rem 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .innerimagewithtwopeople img{
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .innerimagewithtwopeople .aboutjob{
+            position: absolute;
+            left: 65%;
+            top: 2%;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(rgb(133, 245, 245),rgb(238, 72, 238));
+            opacity: 0.8;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 50%;
+        }
+        .innerimagewithtwopeople .aboutjob h2{
+            color: azure;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        .innerimagewithtwopeople .aboutjob p{
+            word-spacing: 2px;
+        }
+        #ourservices{
+            background: #333;
+        }
+
+
+
+
+
+        @media only screen and (max-width:425px){
+        .innerimagewithtwopeople img{
+            height: 230px;
+            width: 230px;
+            margin: 0;
+        }
+        .innerimagewithtwopeople .aboutjob{
+            left: 50%;
+            top: 15%;
+            height: 170px;
+            width: 170px;
+            padding: 1rem 1.5rem;
+            overflow: hidden;
+        }
+        .innerimagewithtwopeople .aboutjob h2{
+            font-size: 1rem;
+            margin: 0.4rem 0;
+        }
+        .innerimagewithtwopeople .aboutjob p{
+            word-spacing: 1.5px;
+            font-size: 0.6rem;
+        }
+        #ourservices h1{
+            font-size: 1.8rem;
+        }
+        }
+
+
+        @media only screen and (min-width:426px) and (max-width:650px){
+        .innerimagewithtwopeople img{
+            height: 310px;
+            width: 310px;
+            margin: 0;
+        }
+        .innerimagewithtwopeople .aboutjob{
+            left: 50%;
+            top: 15%;
+            height: 210px;
+            width: 210px;
+            padding: 1rem 1.5rem;
+            overflow: hidden;
+        }
+        .innerimagewithtwopeople .aboutjob h2{
+            font-size: 1.3rem;
+            margin: 0.4rem 0;
+        }
+        .innerimagewithtwopeople .aboutjob p{
+            word-spacing: 1.5px;
+            font-size: 0.8rem;
+        }
+        #ourservices h1{
+            font-size: 2rem;
+        }
+        }
+        @media only screen and (min-width:651px) and (max-width:768px){
+        .innerimagewithtwopeople img{
+            height: 400px;
+            width: 400px;
+            margin: 0;
+        }
+        .innerimagewithtwopeople .aboutjob{
+            left: 50%;
+            top: 15%;
+            height: 260px;
+            width: 260px;
+            padding: 1rem 1.5rem;
+            overflow: hidden;
+        }
+        .innerimagewithtwopeople .aboutjob h2{
+            font-size: 1.5rem;
+            margin: 0.4rem 0;
+        }
+        .innerimagewithtwopeople .aboutjob p{
+            word-spacing: 1.5px;
+            font-size: 0.9rem;
+        }
+        #ourservices h1{
+            font-size: 2rem;
+        }
+        }
+
+
+
+
+        @media only screen and (min-width:769px) and (max-width:1024px){
+        .innerimagewithtwopeople img{
+            height: 450px;
+            width: 450px;
+            margin: 0;
+        }
+        .innerimagewithtwopeople .aboutjob{
+            left: 45%;
+            top: 15%;
+            height: 320px;
+            width: 320px;
+            padding: 1rem 1.5rem;
+            overflow: hidden;
+        }
+        .innerimagewithtwopeople .aboutjob h2{
+            font-size: 1.6rem;
+            margin: 0.4rem 0;
+        }
+        .innerimagewithtwopeople .aboutjob p{
+            word-spacing: 1.5px;
+            font-size: 1rem;
+        }
+        #ourservices h1{
+            font-size: 2rem;
+        }
+        }
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="outernavbar">
+            <nav id="navbar" data-spy="affix" data-offset-top="197">
+                <div id="navbar-left"><a href="index.html">BinaryForge Tech</a></div>
+                <div id="navbar-middle">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#">Offering</a>
+                            <div class="dropdown-content">
+                                <p>Website Development and Design</p>
+                                <p>Mobile App Development</p>
+                                <p>Software Development</p>
+                                <p>Digital Marketing Services</p>
+                                <p>IT Consulting</p>
+                                <p>UI/UX Design Services</p>
+                                <p>Artificial Intelligence (AI) and Machine Learning (ML)</p>
+                                <p>Data Analytics and Business Intelligence</p>
+                                <p>Blockchain Development</p>
+                                <p>Cybersecurity Services</p>
+                                <p>Managed IT Services</p>
+                                <p>Data Analytics and Business Intelligence</p>
+                                <p>E-commerce Solutions</p>
+                                <p>IT Project Management</p>
+                            </div>
+                        </li>
+    
+                        <li class="dropdown">
+                            <a href="#">Industries</a>
+                            <div class="dropdown-content">
+                                <p>Financial Services</p>
+                                <p>Healthcare</p>
+                                <p>Retail and E-commerce</p>
+                                <p>Manufacturing</p>
+                                <p>Telecommunications</p>
+                                <p>Energy and Utilities</p>
+                                <p>Government and Public Sector</p>
+                                <p>Education</p>
+                                <p>Transportation and Logistics</p>
+                                <p>Hospitality and Tourism</p>
+                            </div>
+                        </li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <form id="navbar-right">
+                    <input type="search" id="search" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass" id="searchbutton"></i></button>
+                </form>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </nav>
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+
+
+    <section id="imagewithtwopeople">
+        <div class="innerimagewithtwopeople">
+        <img src="global-careers-apir-discussing-work.png" alt="">
+        <div class="aboutjob">
+            <h2>Experienced Professionals</h2>
+            <p>Choose to advance your career and make a positive impact through technology choose BinaryForge Tech</p>
+        </div>
+    </div>
+    </section>
+
+
+
+    <main id="ourservices">
+        <h1>We Hire for below positions</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="clement-helardot-95YRwf6CNw8-unsplash.jpg">
+                <h3>Website Development and Design</h3>
+                <p>Whether it's a dynamic corporate website, an e-commerce platform, or a custom web application, our developers are equipped</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="the-average-tech-guy-DsmDqiYduaU-unsplash.jpg" alt="">
+                <h3>Mobile App Development</h3>
+                <p>We understand that a successful mobile app is not just about coding; it's about creating a seamless user experience</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="luke-peters-B6JINerWMz0-unsplash.jpg" alt="">
+                <h3>Software Development</h3>
+                <p> we are committed to delivering innovative and tailored software solutions to empower businesses across various industries. </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="myriam-jessier-eveI7MOcSmw-unsplash.jpg" alt="">
+                <h3>Digital Marketing Services</h3>
+                <p>we offer comprehensive and result-driven Digital Marketing Services tailored to elevate your online  business growth.</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="linkedin-sales-solutions-46bom4lObsA-unsplash.jpg" alt="">
+                <h3>IT Consulting</h3>
+                <p>We take a holistic approach to IT consulting, focusing on aligning technology strategies with your business objectives. </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="firmbee-com-gcsNOsPEXfs-unsplash.jpg" alt="">
+                <h3>UI/UX Design Services</h3>
+                <p>Our team of experienced designers employs strategic design thinking to create interfaces that not only look stunning.</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="arseny-togulev-MECKPoKJYjM-unsplash.jpg" alt="">
+                <h3>Artificial Intelligence (AI) and Machine Learning (ML)</h3>
+                <p>we harness the power of Artificial Intelligence and Machine Learning to propel businesses into the future. </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="maxim-hopman-fiXLQXAhCfk-unsplash.jpg" alt="">
+                <h3>Data Analytics and Business Intelligence</h3>
+                <p>we empower businesses with advanced Data Analytics and Business Intelligence solutions, unlocking the true potential.</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="traxer-kM6QNrgo0YE-unsplash.jpg" alt="">
+                <h3>Blockchain Development</h3>
+                <p>Blockchain technology has emerged as a game-changer, providing secure, transparent, and decentralized solutions for industries.</p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="nahel-abdul-hadi-flha0KwRrRc-unsplash.jpg" alt="">
+                <h3>Cybersecurity Services</h3>
+                <p>we offer comprehensive Cybersecurity Services to fortify your organization's defenses.</p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="jason-goodman-Oalh2MojUuk-unsplash.jpg" alt="">
+                <h3>Managed IT Services</h3>
+                <p>Our Managed IT Services are tailored to provide you with proactive, efficient, and comprehensive solutions.</p>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </main>
+
+        
+
+
+        <section id="details">
+            <div class="details-left">
+                <h2>Solutions</h2>
+                <p>Managed WordPress Hosting</p>
+                <p>Agencies</p>
+                <p>Small & Medium Sized Business</p>
+                <p>Freelancers</p>
+                <p>High-Trafic Websites</p>
+                <p>E-Commerce</p>
+            </div>
+            <div class="details-right">
+                <h2>Resources</h2>
+                <p>Blog</p>
+                <p>Ebook</p>
+                <p>Knowledge Base</p>
+                <p>Customer Reviews</p>
+                <p>Affilate Program</p>
+                <p>Strategic Partners</p>
+            </div>
+        </section>
+
+
+        <footer>
+            <div id="innerfooter">
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social_icon">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="#ourservices">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>&copy;2024 BinaryForge Tech | All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+        
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="vanilla-tilt.min.js"></script>
+
+    <script>
+     var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 120,
+    autoplay: {
+        delay: 2500,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is <= 767px (typical mobile screen)
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        // when window width is <= 991px (typical tablet screen)
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 70,
+        },
+    },
+});
+    </script>
+    
+</body>
+</html>

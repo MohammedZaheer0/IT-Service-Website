@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eef519840c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="creative-minimalistic-sun-logo-isolated-generative-ai__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #section-wrapper{
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+        }
+        .box-wrapper{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            width: 100%;
+            margin:2rem auto;
+            border-radius: 1.8rem;
+        }
+        .info-wrap{
+            height: 550px;
+            padding: 40px;
+            float: left;
+            display: block;
+            border-radius: 30px 0px 0px 30px;
+            background: linear-gradient(144deg, rgba(126,39,156,1)0%, rgba(49,39,157,1)100%);
+            color: #fff;
+        }
+        .info-title{
+            text-align: left;
+            font-size: 1.8rem;
+            letter-spacing: 0.5px;
+        }
+        .info-sub-title{
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 1rem;
+            letter-spacing: 0.5px;
+            line-height: 1.5rem;
+        }
+        .info-details{
+            list-style: none;
+            margin: 3rem 0;
+        }
+        .info-details li{
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        .info-details li i{
+            background: #F44770;
+            padding: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .info-details li a{
+            text-decoration: none;
+            color: #fff;
+            margin-left: 5px;
+        }
+        .info-details li a:hover{
+            color: #F44770;
+        }
+        .social-icons{
+            list-style: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons li{
+            display: inline-block;
+        }
+        .social-icons li i{
+            background: #F44770;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border-radius: 22%;
+            margin: 0px 5px;
+            cursor: pointer;
+            transition: all .5s;
+        }
+        .social-icons li i:hover{
+            background: #fff;
+            color: #000;
+        }
+        .form-wrap{
+            padding: 40px 25px 35px 25px;
+            border-radius: 0px 30px 30px 0px;
+            background:#ecf0f3;
+        }
+        .form-title{
+            text-align: left;
+            margin-left: 23px;
+            font-size: 28px;
+            letter-spacing: 0.5px;
+        }
+        .form-fields{
+            display: table;
+            width: 100%;
+            padding: 15px 5px 5px 5px;
+        }
+        .form-fields input,
+        .form-fields textarea{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1.2rem;
+            color: #555;
+            padding: 20px 10px 20px 5px;
+            width: 100%;
+        }
+        .form-fields textarea{
+            height: 150px;
+            resize: none;
+        }
+        .form-group{
+            width: 46%;
+            float: left;
+            padding: 0px 30px;
+            margin: 14px 12px;
+            border-radius: 25px;
+            box-shadow: inset 8px 8px 8px #cbc3d1, inset -8px -8px 8px #fff;
+        }
+        .form-fields .form-group:last-child{
+            width: 96%;
+        }
+        .submit-button{
+            width: 96%;
+            height: 60px;
+            margin: 0px 12px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            text-align: center;
+            background-color: #F44770;
+            box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+            transition: .5s;
+        }
+        .submit-button:hover{
+            background: #31279d;
+        }
+
+
+        /* Responsive */
+        @media only screen and (max-width:425px){
+        .box-wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin:1rem auto;
+            margin-top: 2rem;
+        }
+        .info-wrap{
+            width: 100%;
+            height: fit-content;
+            padding: 2.5rem 1rem;
+        }
+        .info-title{
+            font-size: 1.4rem;
+        }
+        .info-sub-title{
+            font-size: 0.9rem;
+        }
+        .info-details{
+            margin: 2rem 0;
+        }
+        .info-details li{
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .info-details li i{
+            padding: 0.7rem;
+        }
+        .social-icons li i{
+            padding: 0.9rem;
+            font-size: 1rem;
+        }
+        .form-wrap{
+            width: 100%;
+            padding: 2.5rem 0.5rem 2rem 0.5rem;
+        }
+        .form-title{
+            margin-left: 1rem;
+            font-size: 1.4rem;
+        }
+        .form-fields input,
+        .form-fields textarea{
+            font-size: 0.9rem;
+        }
+        .form-fields textarea{
+            height: 150px;
+            resize: none;
+        }
+        .form-group{
+            padding: 0px 1rem;
+        }
+        .submit-button{
+            width: 70%;
+            height: 50px;
+            font-size: 1.1rem;
+        }
+        }
+
+
+        @media only screen and (max-width:768px){
+            .box-wrapper{
+                width: 100%;
+            }
+            .info-wrap,
+            .form-wrap{
+                width: 100%;
+                height: inherit;
+                float: none;
+            }
+            .info-wrap{
+                border-radius: 30px 30px 0px 0px;
+            }
+            .form-wrap{
+                border-radius: 0px 0px 30px 30px;
+            }
+            .form-group{
+                width: 100%;
+                float: none;
+                margin: 25px 0px;
+            }
+            .form-fields .form-group:last-child,
+            .submit-button{
+                width: 100%;
+            }
+            .submit-button{
+                margin: 10px 0px;
+            }
+        }
+    </style>
+    <title>BinaryForge Tech</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="outernavbar">
+            <nav id="navbar" data-spy="affix" data-offset-top="197">
+                <div id="navbar-left"><a href="index.html">BinaryForge Tech</a></div>
+                <div id="navbar-middle">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#">Offering</a>
+                            <div class="dropdown-content">
+                                <p>Website Development and Design</p>
+                                <p>Mobile App Development</p>
+                                <p>Software Development</p>
+                                <p>Digital Marketing Services</p>
+                                <p>IT Consulting</p>
+                                <p>UI/UX Design Services</p>
+                                <p>Artificial Intelligence (AI) and Machine Learning (ML)</p>
+                                <p>Data Analytics and Business Intelligence</p>
+                                <p>Blockchain Development</p>
+                                <p>Cybersecurity Services</p>
+                                <p>Managed IT Services</p>
+                                <p>Data Analytics and Business Intelligence</p>
+                                <p>E-commerce Solutions</p>
+                                <p>IT Project Management</p>
+                            </div>
+                        </li>
+    
+                        <li class="dropdown">
+                            <a href="#">Industries</a>
+                            <div class="dropdown-content">
+                                <p>Financial Services</p>
+                                <p>Healthcare</p>
+                                <p>Retail and E-commerce</p>
+                                <p>Manufacturing</p>
+                                <p>Telecommunications</p>
+                                <p>Energy and Utilities</p>
+                                <p>Government and Public Sector</p>
+                                <p>Education</p>
+                                <p>Transportation and Logistics</p>
+                                <p>Hospitality and Tourism</p>
+                            </div>
+                        </li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <form id="navbar-right">
+                    <input type="search" id="search" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass" id="searchbutton"></i></button>
+                </form>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </nav>
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <section id="section-wrapper">
+
+            <div class="box-wrapper">
+                <div class="info-wrap">
+                    <h2 class="info-title">Contact Information</h2>
+                    <h3 class="info-sub-title">Fill up the form and our team will get bak to you soon</h3>
+                    <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span><a href="tel: +123456789">123456789</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span><a href="mailto:info@yoursite.com">abcd@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span><a href="binaryforgetech.com">BinaryForge Tech</a>
+                    </li>
+                    </ul>
+
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="form-wrap">
+                    <form action="https://formspree.io/f/xbjnkaao" method="post">
+                        <h2 class="form-title">Send us a Message</h2>
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <input type="text" class="fname" placeholder="First Name" name="firstname">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="lname" placeholder="Last Name" name="lastname">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="phone" placeholder="Phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" placeholder="Write Your Message"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Send Message" class="submit-button">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="details">
+            <div class="details-left">
+                <h2>Solutions</h2>
+                <p>Managed WordPress Hosting</p>
+                <p>Agencies</p>
+                <p>Small & Medium Sized Business</p>
+                <p>Freelancers</p>
+                <p>High-Trafic Websites</p>
+                <p>E-Commerce</p>
+            </div>
+            <div class="details-right">
+                <h2>Resources</h2>
+                <p>Blog</p>
+                <p>Ebook</p>
+                <p>Knowledge Base</p>
+                <p>Customer Reviews</p>
+                <p>Affilate Program</p>
+                <p>Strategic Partners</p>
+            </div>
+        </section>
+
+
+        <footer>
+            <div id="innerfooter">
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social_icon">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="#ourservices">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <p>&copy;2024 BinaryForge Tech | All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+        
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="vanilla-tilt.min.js"></script>
+
+    
+</body>
+</html>
