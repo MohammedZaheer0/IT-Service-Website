@@ -1022,7 +1022,8 @@ footer{
         width: 40%;
     }
     #inner-main-content-middle p{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        font-weight: bold;
     }
     #main-content-middle a{
         display: none;
@@ -1104,8 +1105,8 @@ footer{
 #buildfeature{
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 120vh;
-    margin: 3rem 0;
+    /* min-height: 120vh; */
+    margin: 1rem 0;
     padding-bottom: 2rem;
 }
 #buildfeature-content{
