@@ -1300,11 +1300,6 @@ footer{
     }
     .dropdown {
         position: relative;
-    }
-    .dropdown-content {
-        display: none;
-    }
-    .dropdown-content p{
         display: none;
     }
     #navbar #navbar-middle{
