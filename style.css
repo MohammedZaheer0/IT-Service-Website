@@ -993,7 +993,7 @@ footer{
 
     /* Main Content */
     #main-content{
-        min-height: 100vh;
+        min-height: 70vh;
         display: grid;
         grid-template-columns: 1fr;
         background-position: center;
@@ -1011,7 +1011,8 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding:2rem 1rem;
+        padding:1rem;
+        margin: 0;
         width: 100%;
     }
     #inner-main-content-middle{
