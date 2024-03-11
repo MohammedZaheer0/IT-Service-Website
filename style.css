@@ -1066,6 +1066,7 @@ footer{
     height: 180px;
     border-radius: 50%;
     margin: 0 auto;
+    padding-bottom: 0;
   }
   #ouremployes .icon{
     position: relative;
