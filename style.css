@@ -1077,7 +1077,7 @@ footer{
     position: absolute;
     width: 30px;
     height: 30px;
-    transform-origin: 160px;
+    transform-origin: 165px;
   }
   .content::before{
     content: "";
