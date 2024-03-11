@@ -1048,7 +1048,7 @@ footer{
     #ourservices{
         margin: 2rem auto;
         padding: 1rem 2rem;
-        min-height: 70vh;
+        min-height: 50vh;
     }
     #ourservices .mySwiper{
         width: 80%;
