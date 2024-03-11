@@ -1476,7 +1476,7 @@ footer{
 .testimonial-container{
     width: 380px;
     height: 250px;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 .indicator .btn{
     height: 8px;
@@ -1575,7 +1575,7 @@ footer{
 }
 #innerfooter .menu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 0.7rem;
 }
 #innerfooter .menu li{
@@ -1707,7 +1707,7 @@ footer{
 .testimonial-container{
     width: 450px;
     height: 280px;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 .indicator .btn{
     height: 8px;
