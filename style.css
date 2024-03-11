@@ -959,11 +959,6 @@ footer{
     }
     .dropdown {
         position: relative;
-    }
-    .dropdown-content {
-        display: none;
-    }
-    .dropdown-content p{
         display: none;
     }
     #navbar #navbar-middle{
@@ -994,7 +989,7 @@ footer{
 
     /* Main Content */
     #main-content{
-        min-height: 50vh;
+        /* height: 50vh; */
         display: grid;
         grid-template-columns: 1fr;
         background-position: center;
