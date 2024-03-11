@@ -1106,14 +1106,14 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     /* min-height: 120vh; */
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
     padding-bottom: 2rem;
 }
 #buildfeature-content{
     width: 90%;
 }
 #buildfeature-content h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 #buildfeature-content p{
     word-spacing: 2px;
@@ -1147,7 +1147,7 @@ footer{
     width: 30px;
 }
 #clientreviews{
-    min-height: 100vh;
+    min-height: 70vh;
     margin: 3rem 0;
 }
 #clientreviews h1{
