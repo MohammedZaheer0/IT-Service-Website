@@ -1018,15 +1018,15 @@ footer{
     #inner-main-content-middle{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
     #inner-main-content-middle img{
-        width: 30%;
+        width: 40%;
     }
     #inner-main-content-middle p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     #main-content-middle a{
         display: none;
