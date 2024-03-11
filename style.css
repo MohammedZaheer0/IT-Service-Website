@@ -1065,7 +1065,7 @@ footer{
     
     /* Our Employees.. */
   #ouremployes{
-    min-height: 50vh;
+    min-height: 45vh;
     width: 300px;
     height: 180px;
     border-radius: 50%;
@@ -1079,7 +1079,7 @@ footer{
     position: absolute;
     width: 30px;
     height: 30px;
-    transform-origin: 170px;
+    transform-origin: 160px;
   }
   .content::before{
     content: "";
