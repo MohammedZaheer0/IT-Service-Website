@@ -19,15 +19,14 @@ html{
 /* Navbar */
 #navbar{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 3fr;
     border-bottom: 1px solid rgba(156, 156, 156, 0.568);
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem 1rem 2rem;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 999;
-    /* transition: background-color 0.2s ease-in-out; */
 }
 #navbar #navbar-left{
     font-size: 1.5rem;
@@ -46,7 +45,6 @@ html{
     position: absolute;
     top: 100%;
     left: -100%;
-    /* left: 0; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 10px 10px 0;
     z-index: 10000;
@@ -99,7 +97,6 @@ html{
 #navbar #navbar-right button{
     border: none;
     outline: none;
-    /* background: #20b2aa; */
     background: transparent;
     margin: 0.2rem 0;
     height: 1.8rem;
@@ -277,7 +274,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
   .swiper-slide {
     background: #eceaea;
-    /* height: fit-content; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,7 +293,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 100%;
     padding: 0 1.5rem;
     text-align: start;
-    /* color: #fff; */
     color: #000;
     margin:0.3rem 0;
   }
@@ -668,7 +663,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-radius: 10px;
 }
 .user-text{
-    /* background: #2d3a59; */
     background: orangered;
     width: 520px;
     height: 250px;
@@ -989,7 +983,6 @@ footer{
 
     /* Main Content */
     #main-content{
-        /* height: 50vh; */
         display: grid;
         grid-template-columns: 1fr;
         background-position: center;
@@ -1105,7 +1098,6 @@ footer{
 #buildfeature{
     display: grid;
     grid-template-columns: 1fr;
-    /* min-height: 120vh; */
     margin: 1rem 0 2rem;
     padding-bottom: 2rem;
 }

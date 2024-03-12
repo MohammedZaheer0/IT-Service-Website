@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("navbar").classList.toggle('window-scroll', window.scrollY > 0);
     });
 
-    let Search = document.getElementById("search");
-    let SearchButton = document.getElementById("searchbutton").addEventListener("click", function (e) {
-        e.preventDefault();
-        Search.value = "";
-    });
+    // let Search = document.getElementById("search");
+    // let SearchButton = document.getElementById("searchbutton").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     Search.value = "";
+    // });
 
 
    let open = document.getElementById("menu"); 
