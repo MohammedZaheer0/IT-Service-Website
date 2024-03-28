@@ -441,9 +441,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 
-
-
-
 /* Cards */
 .ourservices{
     text-align: center;
@@ -504,6 +501,29 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .readmore:hover{
     color: #fff;
+    background: #222;
+}
+.card button{
+    width: fit-content;
+    margin: 0 1.3rem;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button a{
+    text-decoration: none;
+    width: fit-content;
+    color: #222;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.card button:hover a{
+    /* background: #222; */
+    color: #fff !important;
+}
+.card button:hover {
     background: #222;
 }
 
@@ -905,7 +925,7 @@ footer{
     }
     .dropdown {
         position: relative;
-        display: none;
+        display: flex;
     }
     #navbar #navbar-middle{
         display: flex;

@@ -26,10 +26,10 @@
                         <div class="dropdown-content">
                             
                             <div class="left-dropdown-content">
-                                <p><a href="contact.html">Java Full Stack</a></p>
-                                <p><a href="contact.html">SAP</a></p>
-                                <p><a href="contact.html">Cybersecurity</a></p>
-                                <p><a href="contact.html">DevOps</a></p>
+                                <p><a href="java_full_stack.html">Java Full Stack</a></p>
+                                <p><a href="sap.html">SAP</a></p>
+                                <p><a href="cybersecurity.html">Cybersecurity</a></p>
+                                <p><a href="devOps.html">DevOps</a></p>
                             </div>
 
                             
@@ -136,7 +136,7 @@
                 <img src="javafullstack.png" class="card-img">
                 <h3 class="card-title">Java Full Stack</h3>
                 <p class="card-content">Empower your development teams with Java Full Stack solutions that deliver seamless user experiences and scalable, secure applications. Our Java Full Stack services cover frontend and backend development, database integration... <span class="moreText">  and deployment, ensuring that your applications meet the needs of your users and business stakeholders. With our expertise, you can accelerate development cycles, respond quickly to market changes, and deliver innovative solutions that drive business growth. Whether you're building customer-facing applications, internal tools, or mobile apps, we provide the guidance and support you need to succeed in today's digital landscape.</span></p>
-                <button class="readmore">Read More</button>
+                <button> <a href="java_full_stack.html">Read More</a></button>
               </div>
 
 
@@ -145,7 +145,8 @@
                 <img src="2150041866.jpg" class="card-img">
                 <h3 class="card-title">SAP</h3>
                 <p class="card-content">Welcome to the realm of SAP HANA, where data transcends from static repositories to dynamic assets of business value. Our SAP HANA services are your gateway to this transformative technology. SAP HANA isn't just about handling data...<span class="moreText">   it's about unleashing its potential to drive innovation, improve operational efficiency, and foster growth. Our team of experts guides you through every step of the journey – from initial consultation and system architecture design to seamless implementation and ongoing optimization. We understand that your data is your most valuable asset, and with SAP HANA, we empower you to harness its full potential, delivering real-time insights that propel your business forward with confidence and clarity.</span></p>
-                <button class="readmore">Read More</button>
+                <button> <a href="sap.html">Read More</a></button>
+
               </div>
 
 
@@ -153,7 +154,8 @@
             <img src="2150061984.jpg" class="card-img">
             <h3 class="card-title">Cybersecurity</h3>
             <p class="card-content">Protecting your business from cyber threats is more important than ever. It's like putting a lock on your front door to keep burglars out. Our cybersecurity services are like having...  <span class="moreText">a team of security guards watching over your digital assets 24/7. We'll assess your risks, detect any threats, and make sure you're compliant with all regulations. With our help, you can sleep soundly knowing your business is safe from hackers and cybercriminals.</span></p>
-            <button class="readmore">Read More</button>
+            <button> <a href="cybersecurity.html">Read More</a></button>
+
           </div>
 
 
@@ -162,7 +164,8 @@
             <img src="devops1.jpg" class="card-img">
             <h3 class="card-title">DevOps</h3>
             <p class="card-content">Embrace the culture of collaboration and continuous improvement with DevOps, the key to unlocking the full potential of your software development lifecycle. Our DevOps services are designed to help organizations break...<span class="moreText">down silos, streamline processes, and deliver high-quality software at speed. From automated testing and deployment to infrastructure as code and continuous integration, we provide the tools and expertise you need to succeed in today's fast-paced digital world. With our guidance and support, you can embrace DevOps principles and practices with confidence, driving innovation, reducing time-to-market, and delivering greater value to your customers.</span> </p>
-            <button class="readmore">Read More</button>
+            <button> <a href="devOps.html">Read More</a></button>
+
           </div>
 
     </div>
@@ -216,7 +219,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="SAP-BW-4HANA.png">
+                <img src="sap4.jpg">
             </div>
         </div>
 
@@ -623,38 +626,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="vanilla-tilt.min.js"></script>
     <script>
-
-
-let SetCard = JSON.parse(localStorage.getItem('SetCard')) ?? [];
-let ReadMore = document.querySelectorAll('.readmore');
-let MoreText = document.querySelector('.moreText');
-ReadMore.forEach((element, index) => {
-    element.addEventListener('click', () => {
-        let Card = element.closest('.card');
-        let CardImage = Card.querySelector('.card-img'); // Select within the current card
-        let CardTitle = Card.querySelector('.card-title'); // Select within the current card
-        let CardContent = Card.querySelector('.card-content'); // Select within the current card
-
-        if (CardImage && CardTitle && CardContent) {
-            let CImg = CardImage.src;
-            let CTitle = CardTitle.textContent;
-            let CContent = CardContent.textContent;
-
-            SetCard.push({
-                Image: CImg,
-                Title: CTitle,
-                Content: CContent,
-                uniqueId: Math.floor(Math.random() * 100)
-            });
-
-            localStorage.setItem("SetCard", JSON.stringify(SetCard));
-            window.location.href = "/cards.html";
-            setTimeout(()=>{
-                MoreText.style.display = "block";
-            },500)
-        }
-    });
-});
 
 
 VanillaTilt.init(document.querySelectorAll  (".ourpartners-box"), {
