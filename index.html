@@ -176,7 +176,7 @@
     <section class="timeline">
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="standard-quality-control-collage-concept.jpg">
+                <img src="standard-quality-control-collage-concept.jpg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>SAP HANA</h3>
@@ -193,7 +193,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="people-office-analyzing-checking-finance-graphs.jpg">
+                <img src="people-office-analyzing-checking-finance-graphs.jpg" class="box">
             </div>
         </div>
 
@@ -202,7 +202,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="116605.jpg">
+                <img src="116605.jpg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>SAP Analytics Cloud (SAC)</h3>
@@ -219,7 +219,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="sap4.jpg">
+                <img src="sap4.jpg" class="box">
             </div>
         </div>
 
@@ -227,7 +227,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="devops1.jpg">
+                <img src="devops1.jpg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>DevOps</h3>
@@ -244,7 +244,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="azurdevops.png">
+                <img src="azurdevops.png" class="box">
             </div>
         </div>
 
@@ -252,7 +252,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="awsdevops.jpeg">
+                <img src="awsdevops.jpeg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>AWS DevOps</h3>
@@ -269,7 +269,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="cloudservices.jpg" >
+                <img src="cloudservices.jpg" class="box">
             </div>
         </div>
 
@@ -278,7 +278,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="testing.jpg" >
+                <img src="testing.jpg" class="box">
             </div>
             <div class="right-timeline">
             <h3>Testing</h3>
@@ -295,7 +295,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="javafullstack.png" >
+                <img src="javafullstack.png" class="box">
             </div>
         </div>
 
@@ -303,7 +303,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="windowsserver.png" >
+                <img src="windowsserver.png" class="box">
             </div>
             <div class="right-timeline">
                 <h3>Windows Server</h3>
@@ -320,7 +320,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="microoffice.png" >
+                <img src="microoffice.png" class="box">
             </div>
         </div>
 
@@ -329,7 +329,7 @@
         
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="network-security.png" >
+                <img src="network-security.png" class="box">
             </div>
             <div class="right-timeline">
             <h3>Network and Security</h3>
@@ -346,7 +346,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="saleforce.jpg" >
+                <img src="saleforce.jpg" class="box">
             </div>
         </div>
 
@@ -355,7 +355,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="98438.jpg" >
+                <img src="98438.jpg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>ServiceNow</h3>
@@ -372,7 +372,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="2150061984.jpg" >
+                <img src="2150061984.jpg" class="box">
             </div>
         </div>
 
@@ -380,7 +380,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="71519.jpg" >
+                <img src="71519.jpg" class="box">
             </div>
             <div class="right-timeline">
                 <h3>SharePoint  as a Service</h3>
@@ -396,7 +396,7 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="2150061957.jpg" >
+                <img src="2150061957.jpg" class="box">
             </div>
         </div>
        
@@ -404,7 +404,7 @@
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="workday.png" >
+                <img src="workday.png" class="box">
             </div>
             <div class="right-timeline">
                 <h3>Workday as a Service</h3>
@@ -420,13 +420,13 @@
                 
             </div>
             <div class="right-timeline1">
-                <img src="financial1.jpeg" >
+                <img src="financial1.jpeg" class="box">
             </div>
         </div>
 
         <div class="inner-timeline">
             <div class="left-timeline">
-                <img src="webhoisting.webp" >
+                <img src="webhoisting.webp" class="box">
             </div>
             <div class="right-timeline">
                 <h3>Web Hosting Service</h3>
@@ -628,11 +628,28 @@
     <script>
 
 
-VanillaTilt.init(document.querySelectorAll  (".ourpartners-box"), {
-		max: 25,
-		speed: 400
-	});
+    VanillaTilt.init(document.querySelectorAll  (".ourpartners-box"), {
+            max: 25,
+            speed: 400
+        });
 
+
+    let boxes = document.querySelectorAll(".box");
+    window.addEventListener('scroll',checkBoxes)
+    checkBoxes();
+    
+    function checkBoxes(){
+        let triggerBottom = window.innerHeight / 5* 4 
+        boxes.forEach(box => {
+            let boxTop = box.getBoundingClientRect().top
+            if(boxTop < triggerBottom){
+                box.classList.add('show')
+            }
+            else{
+                box.classList.remove('show');
+            }
+        })
+    }
 
 
     </script> 

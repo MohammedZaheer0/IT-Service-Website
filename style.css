@@ -368,12 +368,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .timeline .inner-timeline .left-timeline img{
     position: absolute;
-    /* left: 27%; */
     left: 0%;
-    top: 10%;
+    top: 18%;
     width: 70%;
-    animation: slideFromLeft 1s ease-in-out forwards;
-    opacity: 0;
 }
 .timeline .inner-timeline .right-timeline{
     padding: 0 2rem;
@@ -381,17 +378,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .timeline .inner-timeline .right-timeline h3{
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-@keyframes slideFromLeft{
-    0%{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-        left: 25%;
-    }
 }
 .timeline .inner-timeline .right-timeline p{
     line-height: 25px;
@@ -409,24 +395,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .timeline .inner-timeline .right-timeline1 img{
     position: absolute;
     right: 0%;
-    top: 10%;
+    top: 15%;
     width: 70%;
-    opacity: 0;
     overflow: hidden;
-    animation: slideFromRight 1s ease-in-out forwards;
-}
-@keyframes slideFromRight{
-    0%{
-        opacity: 0;
-        transform: translateX(100%);
-        overflow: hidden;
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-        right: 5%;
-        overflow: hidden;
-    }
 }
 .timeline .inner-timeline .left-timeline1{
     padding: 0 2rem;
@@ -438,6 +409,22 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .timeline .inner-timeline .left-timeline1 p{
     line-height: 25px;
 }
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(400%);
+    transition: transform 0.5s ease;    
+}
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.box.show{
+    transform: translateX(0);
+}
+
+
 
 
 
