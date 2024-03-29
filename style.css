@@ -918,14 +918,14 @@ footer{
     .dropdown-content{
         position: absolute;
         margin: 0 auto;
-        top:-250%;
+        top:0%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
         padding: 10px 10px 10px 0;
         z-index: 10000;
         background-color: #20b2aa;
         margin-top: 0rem;
         overflow: auto;
-        min-height: 57vh;
+        min-height: 30vh;
     }
     .dropdown-content .left-dropdown-content{
         min-height: max-content;   
@@ -934,7 +934,7 @@ footer{
          
     }
     .dropdown-content .left-dropdown-content p {
-        margin: 0.5rem 0;
+        margin: 0.4rem 0;
         font-size: 1rem;
         text-align: center;
     }
