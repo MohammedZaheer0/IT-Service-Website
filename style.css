@@ -918,7 +918,7 @@ footer{
     .dropdown-content{
         position: absolute;
         margin: 0 auto;
-        top:-270%;
+        top:-300%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
         padding: 10px 10px 10px 0;
         z-index: 10000;
