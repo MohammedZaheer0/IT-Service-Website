@@ -930,6 +930,7 @@ footer{
     .dropdown-content .left-dropdown-content{
         min-height: max-content;   
         margin-left: 3rem;
+        /* margin-top: -1rem; */
         height: 90%;
          
     }
