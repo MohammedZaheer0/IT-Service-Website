@@ -357,11 +357,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     justify-content: center;
     align-items: center;
     margin: 4rem auto;
+    gap: 3rem;
     overflow-x: hidden;
 }
 .timeline .inner-timeline .left-timeline img{
     width: 70%;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 .timeline .inner-timeline .right-timeline{
     padding: 0 2rem;
@@ -376,7 +377,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .timeline .inner-timeline .right-timeline1 img{
     width: 70%;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 .timeline .inner-timeline .left-timeline1{
     padding: 0 2rem;
@@ -393,6 +394,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .box{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left ,#93A5CF ,#E4EfE9);
+    padding: 2rem 0;
+    border-radius: 20px;
     transform: translateX(400%);
     transition: transform 0.7s ease;    
 }
@@ -1064,10 +1070,9 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         width: 95%;
-        margin: 2rem auto;
+        margin: 2.5rem auto;
     }
     .timeline .inner-timeline .left-timeline{
-        border-top-right-radius: 40%;
         margin: 2rem 1rem;
         height: 35vh;
     }
@@ -1083,7 +1088,6 @@ footer{
     .timeline .inner-timeline .right-timeline1{
         margin: 2rem 1rem;
         height: 35vh;
-        border-top-left-radius: 5%;
     }
     .timeline .inner-timeline .left-timeline1 h3{
         font-size: 1.3rem;
@@ -1467,7 +1471,6 @@ footer{
         margin: 4rem auto;
     }
     .timeline .inner-timeline .left-timeline{
-        border-top-right-radius: 40%;
         margin: 2rem 1rem;
         height: 35vh;
     }
@@ -1483,7 +1486,6 @@ footer{
     .timeline .inner-timeline .right-timeline1{
         margin: 2rem 1rem;
         height: 35vh;
-        border-top-left-radius: 5%;
     }
     .timeline .inner-timeline .left-timeline1 h3{
         font-size: 1.5rem;
