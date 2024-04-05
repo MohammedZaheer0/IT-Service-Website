@@ -15,6 +15,12 @@ html{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 
 /* Navbar */
 #navbar{
@@ -23,10 +29,13 @@ html{
     border-bottom: 1px solid rgba(156, 156, 156, 0.568);
     align-items: center;
     padding: 1rem 0rem 1rem 2rem;
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
+    background: #fff;
 }
 #navbar #navbar-left{
     font-size: 1.6rem;
@@ -58,12 +67,14 @@ html{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    /* width: fit-content; */
 }
 .dropdown-content .left-dropdown-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    width: fit-content;    
 }
 .dropdown-content .left-dropdown-content p {
     margin: 1rem 0;
@@ -158,6 +169,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-size: cover;
     position: relative;
     overflow: hidden;
+    margin-top: 4rem;
 }
 
 #main-content .bubbles img{
@@ -963,6 +975,7 @@ footer{
         position: relative;
         overflow: hidden;
         min-height: 100vh;
+        margin-top: 1rem;
     }
     #main-content .bubbles img{
          width: 20px;

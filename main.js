@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+
+      window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 0) {
+            Navbar.classList.add("sticky");
+        } else {
+            Navbar.classList.remove("sticky");
+        }
+    });
+
+
+
    let open = document.getElementById("menu"); 
    let close = document.getElementById("close"); 
    let Navbar = document.getElementById("navbar"); 
